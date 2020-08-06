@@ -8,7 +8,7 @@
  * `node src/env_example/index.js`, it produces
  * the following output
  * 
- * ![Result of the basic script](env_1.png)
+ * ![Result of the basic script](../assets/env_1.png)
  */
 console.log("Hello World");
 
@@ -30,7 +30,7 @@ console.log("Hello World");
  * When you run your script with `MY_ENV=development node src/env_example/index.js`,
  * it produces the following output
  * 
- * ![Result of the basic script](env_2.png)
+ * ![Result of the basic script](../assets/env_2.png)
  */
 {
     console.log(`Hello ${process.env.MY_ENV} environment`);

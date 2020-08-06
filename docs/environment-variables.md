@@ -50,7 +50,7 @@ When you run this script with the command
 `node src/env_example/index.js`, it produces
 the following output
 
-![Result of the basic script](env_1.png)
+![Result of the basic script](../assets/env_1.png)
 
 You can easily set an environment variable by
 prepending it to the `node`-command like this:
@@ -64,16 +64,18 @@ You can access an environment variable's value
 through the property of the `process` global object.
 
 
-```js
-console.log(`Hello ${process.env.MY_ENV} environment`);
-console.log(`Hello ${process.env["MY_ENV"]} environment`);
+```
+{
+  console.log(`Hello ${process.env.MY_ENV} environment`);
+  console.log(`Hello ${process.env["MY_ENV"]} environment`);
+}
 ```
 
 
 When you run your script with `MY_ENV=development node src/env_example/index.js`,
 it produces the following output
 
-![Result of the basic script](env_2.png)
+![Result of the basic script](../assets/env_2.png)
 
 ---
 
@@ -96,7 +98,9 @@ name. The full name really is `.env`)
 ```
 MY_FILE_ENV=production
 GREETING=Hi
+
 ```
+
 
 Unfortunately, `.env`-files do not work out of the box in Node.
 But there is the `dotenv`-library. With more than 18 million
@@ -111,6 +115,7 @@ npm install dotenv
 
 # or with Yarn 
 yarn add dotenv
+
 ```
 
 
@@ -149,7 +154,7 @@ declare var process : {
 The following image depicts how my IDE offers auto-completion
 for my customized `process.env`.
 
-![Auto-Complete process.env](env_3.png)
+![Auto-Complete process.env](../assets/env_3.png)
 
 ---
 

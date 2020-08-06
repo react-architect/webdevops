@@ -95,7 +95,7 @@ declare var process : {
 The following image depicts how my IDE offers auto-completion
 for my customized `process.env`.
 
-![Auto-Complete process.env](env_3.png)
+![Auto-Complete process.env](../assets/env_3.png)
 
 ---
 
