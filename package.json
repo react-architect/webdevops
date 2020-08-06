@@ -1,0 +1,20 @@
+{
+  "name": "webdevops",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "keywords": [],
+  "author": "Dr. Frank Zickert",
+  "license": "MIT",
+  "scripts": {
+    "publishable": "node ./node_modules/publishable-tech/index.js start",
+    "env_example": "MY_ENV=development node ./src/env_example/index.js",
+    "env_file_example": "node -r dotenv/config ./src/env_example/index.js"
+  },
+  "devDependencies": {
+    "publishable-tech": "0.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
